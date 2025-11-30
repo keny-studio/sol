@@ -1,5 +1,10 @@
 ## $${\color{red}MySQL}$$
 
+#### Comment
+```MySQL
+-- comment
+```
+
 #### Login
 ```MySQL
 mysql -u root -p
