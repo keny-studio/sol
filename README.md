@@ -1,2 +1,2 @@
 # sol
-SOL - Summaries Of Language
+## $${\color{red}SOL \space - \space Summaries \space Of  \space Language}$$
