@@ -1,18 +1,22 @@
 ## $${\color{red}YAML}$$
 
+#### comment 
+```YAML
+# Nice to meet you
+```
 
 #### object
 ```YAML
 person:
 ```
 
-  #### string value. single/double quotes anchoring
+  #### string value.
   ```YAML
   name: &name "keny" # anchor name doesn't have to be the same as key name
   occupation: 'boss'
 ```
 
-  #### integer value type casting
+  #### integer
   ```YAML
   age: !!float 69 # 69.0
   gpa: !!str 66.6 # "66.6"
@@ -27,12 +31,12 @@ person:
   boss: true
 ```
 
-  #### dates (ISO 8601)
+  #### dates
   ```YAML
   birthday: 1993-06-06 16:06:06
 ```
 
-  #### null value
+  #### null
   ```YAML
   flaws: null
 ```
@@ -45,13 +49,13 @@ person:
     - painting
     - tattooing
 ```
+or
 
-  #### another way to create lists
   ```YAML
   movies: ['The Office', "Harry Potter"]
 ```
 
-  #### store list of objects
+  #### list of objects
   ```YAML
   friends:
   - name: "keny"
@@ -62,7 +66,7 @@ person:
     age: 21
 ```
 
-  #### long text. newline will be removed
+  #### long text
   ```YAML
   description: >
 If you like — I can try to dig past records
@@ -73,7 +77,7 @@ or if the domain was ever registered.
 Do you want me to attempt that for you now?
 ```
 
-  #### verbatim. format will be preserved
+  #### verbatim
 
   ```YAML
   signature: |
@@ -82,7 +86,7 @@ Do you want me to attempt that for you now?
     email - keny@keny.studio
 ```
 
-  #### anchoring. value will refer to anchor &ANCHOR
+  #### anchor
   ```YAML
   id: *name # "keny"
 ```
